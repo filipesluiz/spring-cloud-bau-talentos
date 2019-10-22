@@ -1,0 +1,1 @@
+insert into categoria(nome, data) values('manga', now());
