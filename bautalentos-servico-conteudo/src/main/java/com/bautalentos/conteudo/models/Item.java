@@ -2,23 +2,23 @@ package com.bautalentos.conteudo.models;
 
 public class Item {
 
-	private Conteudo conteudo;
+	private Categoria categoria;
 	
 	private Long condidato;
 
 	public Item(){}
 	
-	public Item(Conteudo conteudo, Long condidato) {
-		this.conteudo = conteudo;
+	public Item(Categoria categoria, Long condidato) {
+		this.categoria = categoria;
 		this.condidato = condidato;
 	}
 
-	public Conteudo getConteudo() {
-		return conteudo;
+	public Categoria getCategoria() {
+		return categoria;
 	}
 
-	public void setConteudo(Conteudo conteudo) {
-		this.conteudo = conteudo;
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
 	}
 
 	public Long getCondidato() {

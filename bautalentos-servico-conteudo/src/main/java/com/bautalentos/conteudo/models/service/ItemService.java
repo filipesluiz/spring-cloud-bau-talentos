@@ -8,5 +8,5 @@ public interface ItemService {
 
 	public List<Item> findAll();
 	
-	public Long findById(Long id);
+	public Item findById(Long id);
 }
