@@ -20,13 +20,13 @@ public class ItemServiceImpl implements ItemService {
 	@Override
 	public List<Item> findAll() {
 		List<Categoria> categorias = Arrays.asList(cliente.getForObject("http://localhost:8001/listar", Categoria[].class));
-		return categorias.stream().map(c -> new Item(c, 1l)).collect(Collectors.toList());
+		return categorias.stream().map(c -> new Item(c)).collect(Collectors.toList());
 	}
 
 	@Override
 	public Item findById(Long id) {
 		Categoria categoria = cliente.getForObject("http://localhost:8001/listar/{id}", Categoria.class, id);
-		return new Item(categoria, 1l);
+		return new Item(categoria);
 	}
 
 }
