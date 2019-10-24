@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.bautalentos.conteudo.models.Categoria;
 
-@FeignClient(name = "servico-categoria", url = "http://localhost:8001")
+@FeignClient(name = "servico-categoria")
 public interface CategoriaClienteRest {
 
 	@GetMapping("/listar")
