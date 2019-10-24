@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 import com.bautalentos.conteudo.models.Categoria;
 import com.bautalentos.conteudo.models.Item;
 
-@Service
+@Service("serviceRestTemplate")
 public class ItemServiceImpl implements ItemService {
 
 	@Autowired
